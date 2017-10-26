@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    font: "Verdana", "Lucida Sans", "Lucida Sans Unicode", "sans-serif";
+}
+
+body{
+
+    background: rgb(240,249,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(240,249,255,1) 0%, rgba(203,235,255,1) 47%, rgba(161,219,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 );
+}
+
+.img{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+header{    
+    background-image: url("../img/fundo.jpg");
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 150px;    
+}
+
+h1.centro{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    color: #d3e201;
+    top: 10px;
+    font: 44px "Myriad Pro", "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "Verdana", "sans-serif";
+    text-shadow: 2px 2px 2px
+}
+
+nav#menu ul {
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 10 auto;
+    background-image: url("../img/fundo.jpg");
+    font: 20px "Myriad Pro", "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "Verdana", "sans-serif";
+}
+
+nav#menu li {
+    
+    display: inline-block;
+    padding: 10px;
+    -webkit-transition: blackground-color 1s;
+    -moz-transition: blackground-color 1s;
+    -ms-transition: blackground-color 1s;
+    -o-transition: blackground-color 1s;
+    transition: blackground-color 1s;
+    margin: 0 auto;
+    width: 200px;
+}
+
+nav#menu li a {
+  
+    text-decoration: none;    
+    text-align: center;
+    color: #d3e201;
+    font-weight: bold;
+}
+
+nav#menu li a:hover {
+    background-color: #d3e201;
+    color: #0c86cc;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer{    
+    position: relative;
+    color: rgb(53, 53, 53);
+    bottom: 0;
+    width:100%;   
+    height: 40px;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}

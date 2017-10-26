@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+h1.aprender{
+    
+    font-size: 38px;
+    color: #0c7cb8;
+    font-weight: 700;
+    font-family: "Helvetica", "sans-serif";
+    text-align: center;
+    text-shadow: 1px 1px 1px;
+}
+
+h1.aprender:hover{
+    font-size: 42px;
+    color: #0c79af;
+    font-weight: 850;
+    font-family: "Helvetica", "sans-serif";
+    text-align: center;
+    position: relative;
+    text-shadow: 2px 2px 2px;    
+}
+
+nav.conteudo_borda{
+    height: auto;
+    width: auto;
+    border: 2px solid #070031
+    
+}
+
+nav#conteudo ul {
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+    position: static;
+    display: flex;
+}
+
+nav#conteudo li {
+    display: inline-block;
+    padding: 10px;
+    -webkit-transition: blackground-color 1s;
+    -moz-transition: blackground-color 1s;
+    -ms-transition: blackground-color 1s;
+    -o-transition: blackground-color 1s;
+    transition: blackground-color 1s;
+    margin: 0 auto;
+    width: 200px;
+}
+
+nav#conteudo li a {
+    text-decoration: none;    
+    text-align: center;
+    font-size: 22px;
+    color: #0c7cb8;
+    font-weight: bold;
+}
+
+.titulo{
+    font-size: 40px;
+    font-family: "Helvetica", "sans-serif";
+    text-align: left;
+    color: #2151ac;
+    text-shadow: 1px 2px 2px;
+}
+
+/*ESTILO DA TABELA*/
+
+#tabela_cursos {
+    font: 20px sans-serif;
+    background-color: #efe;
+    border-collapse: collapse;
+    empty-cells: show;
+    border: 1px solid #7a7;
+}
+  
+#tabela_cursos > caption {
+    font-family: "Helvetica", "sans-serif";
+    color: #033faf;
+    text-shadow: 2px 2px 2px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 200%;
+    border-bottom: .2em solid #4ca;
+    margin-bottom: .5em;
+}
+  
+  
+#tabela_cursos td {
+    text-align: right;
+    padding-right: .5em;
+}
+  
+  
+#tabela_cursos > thead > tr:first-child {
+    text-align: center;
+    color: blue;
+}
+
+#tabela_cursos td {
+    background-color: #cef;
+    padding:.5em .5em .5em 3em;
+}
+
+/*FIM DO ESTILO DA TABELA*/
+
+/*COMEÇO DO ESTILO DOS TEXTOS*/
+
+p.texto{
+    font-size: 22px;
+}
+
+a.cursos{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+
+a.cursos:hover{
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* ESTILO DOS EX ALUNOS INDEX */
+
+img.ex_alunos{
+    height: 150px;
+    width: 100px;
+}
+
+a.nome_aluno{
+    font-size: 58px;
+    color: #0038a0;
+    font-family: "Brush Script Std", "Brush Script MT", "cursive";
+}
+
+
