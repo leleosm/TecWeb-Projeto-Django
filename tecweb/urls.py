@@ -19,5 +19,11 @@ from core .views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index)
+    url(r'^index', index),
+    url(r'^contato',contato),
+    url(r'^cadastro', cadastro),
+    url(r'^cursos', cursos),
+    url(r'^login', login),
+    url(r'^noticias', noticias),
+    url(r'^novos_alunos', novos_alunos)
 ]

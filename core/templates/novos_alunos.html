@@ -4,8 +4,8 @@
     <head>
         <title>FAPALUN</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="../css/cabecalho.css" />
-        <link rel="stylesheet" href="../css/novos_style.css" />
+        <link rel="stylesheet" href="../static/content/cabecalho.css" />
+        <link rel="stylesheet" href="../static/content/novos_style.css" />
     </head>
 
     <body>
@@ -14,15 +14,15 @@
             <header class="interface">
                 <div class="bloco">
                 <h1 class="centro">FACULDADES PAULISTAS UNIDAS</br>FAPALUN</h1>
-                <img src="../img/logo1.jpg" alt="logo" class="img">
+                <img src="../static/img/logo1.jpg" alt="logo" class="img">
                 </div>
                 <nav id="menu">
                     <ul class="nav">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="cursos/cursos.html">Cursos</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
                         <li><a href="noticias.html">Notícias</a></li>
                         <li><a href="login.html">Academico</a></li>
-                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </nav>
             </header>
@@ -109,17 +109,20 @@
                         </fieldset>
                 
                         <div class="campo">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea rows="6" style="width: 20em" id="mensagem" name="mensagem"></textarea>
+                            <label for="curso" id="curso">Curso</label>
+                            <select name="curso" id="curso">
+                                <option value="">--</option>
+                                <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                                <option value="Sistemas de Informação">Sistemas de Informação</option>
+                                <option value="Processos Gerenciais">Processos Gerenciais</option>
+                                <option value="Jogos Digitais">Jogos Digitais</option>
+                                <option value="Banco de Dados">Banco de Dados</option>
+                                <option value="Engenharia Elétrica">Engenharia Elétrica</option>
+                                <option value="Sociologia">Sociologia</option>
+                                <option value="Ciêncas Contábeis">Ciêncas Contábeis</option>
+                            </select>
                         </div>
-                
-                        <div class="campo">
-                            <label>Newsletter</label>
-                            <label>
-                                <input type="checkbox" name="newsletter" value="1"> Gostaria de receber a Newsletter da FAPALUN
-                            </label>
-                        </div>
-                
+                               
                         <button type="submit" name="submit">Enviar</button>
                         <button type="reset" name="reset">Limpar</button>
                     </fieldset>
