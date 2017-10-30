@@ -1,3 +1,4 @@
 from django.contrib import admin
+from core.models import NovoAluno
 
-# Register your models here.
+admin.site.register(NovoAluno)

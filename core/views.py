@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from core.models import *
+from core.forms import *
 
 def index(requisicao):
 
@@ -16,8 +18,21 @@ def cadastro(requisicao):
 
 
 
-def contato(requisicao):
-    return render(requisicao,"contato.html")
+def contato(request):
+
+    if request.POST:
+        form = ContatoForm(request.POST)
+        if form.is_valid():
+            form.envia_email()
+    else:
+        form = ContatoForm()
+
+    contexto = {
+        "form":form
+    }
+
+    return render(request,"contato.html",contexto)
+
 
 
 
